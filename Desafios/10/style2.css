@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor01:#C5EBD6;
+    --cor02:#83E1AD;
+    --cor03:#3DDC84;
+    --cor04:#2FA866;
+    --cor05:#1A5C37;
+    --cor06:#063D1E;
+    --font-android: 'Idroid';
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-padrão: Arial, Verdana, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color:var(--cor02);
+}
+
+article {
+    background-color:white;
+    width: 500px;
+}
+
+header { 
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--font-android);
+}
