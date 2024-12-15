@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/bars?f=classic&s=solid">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <i  id="burguer" class="fa-solid fa-bars" onclick="clickMenu()">bars</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi libero voluptatum nulla numquam doloribus eum magnam ullam officiis fuga fugiat aspernatur quia earum perspiciatis id pariatur velit autem, sint hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione optio nulla at id magnam animi numquam, quo quaerat perspiciatis aspernatur voluptatum corrupti in sapiente dicta fugit, obcaecati sequi sunt quod?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam sapiente, aperiam perspiciatis et velit mollitia non, natus delectus sed ullam laboriosam, nesciunt saepe cum? Sequi, esse! Suscipit explicabo aperiam impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, labore. Distinctio sapiente et tempora at minima animi perspiciatis sed non ex, quaerat, numquam laudantium necessitatibus eaque iure! Et, quisquam similique.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illo totam explicabo magni sunt, non voluptatum aperiam, deserunt ipsum, asperiores magnam quod qui laudantium atque ut nulla nesciunt esse labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, hic quaerat! Soluta, neque odio? Id voluptatibus, ipsum earum est dolore fugiat dolorum iste deleniti et explicabo culpa facere distinctio eius!</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            itens.style.display= 'block'
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
