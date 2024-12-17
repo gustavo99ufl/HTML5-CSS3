@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="https://fontawesome.com/icons/bars?f=classic&s=solid">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Meu site</h1>
-        <i  id="burguer" class="fa-solid fa-bars" onclick="clickMenu()">bars</i>
+        <i id="burguer" class="fa-solid fa-bars" onclick="clickMenu()"></i>
         <menu id="itens">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -31,13 +32,24 @@
     </main>
     <script>
         function clickMenu() {
-            itens.style.display= 'block'
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
+            var itens = document.getElementById('itens');
+            if (window.getComputedStyle(itens).display === 'none') {
+                itens.style.display = 'block';
             } else {
-                itens.style.display = 'block'
+                itens.style.display = 'none';
             }
         }
+
+        function mudoutamanho() {
+            var itens = document.getElementById('itens');
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none';
+            }
+        }
+        
+        window.onload = mudoutamanho;
     </script>
 </body>
 </html>
